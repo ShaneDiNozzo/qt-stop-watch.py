@@ -15,20 +15,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="2">
-     <widget class="QLCDNumber" name="sec">
-      <property name="frameShape">
-       <enum>QFrame::NoFrame</enum>
-      </property>
-      <property name="segmentStyle">
-       <enum>QLCDNumber::Filled</enum>
-      </property>
-      <property name="value" stdset="0">
-       <double>0.000000000000000</double>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
+    <item row="1" column="2">
      <widget class="QPushButton" name="start">
       <property name="text">
        <string>Start</string>
@@ -38,61 +25,23 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
+    <item row="1" column="1">
      <widget class="QPushButton" name="reset">
       <property name="text">
        <string>Reset</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="QLCDNumber" name="min">
+    <item row="0" column="1" colspan="2">
+     <widget class="QLCDNumber" name="lcd">
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
       </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLabel" name="label">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
       </property>
-      <property name="font">
-       <font>
-        <family>Ubuntu Mono</family>
-        <pointsize>50</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>MIN</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="QLabel" name="label_2">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="font">
-       <font>
-        <family>Ubuntu Mono</family>
-        <pointsize>50</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>SEC</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+      <property name="digitCount">
+       <number>10</number>
       </property>
      </widget>
     </item>
